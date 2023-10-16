@@ -1,113 +1,74 @@
-import Image from 'next/image'
+import Image from "next/image"
+import meetingIcon from "./assets/meeting-image.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="min-h-screen mx-auto">
+      {/* Sticky Navbar */}
+      <div id="navbar" className="shadow-md sticky">
+        <div className="px-8 md:px-0 container mx-auto flex items-center justify-between pt-4 pb-2">
+          <span className="font-bold md:text-xl"><span className="text-blue-600">ANZ</span> Migrate</span>
+          <button className="bg-blue-600 rounded-md py-2 px-9 font-medium text-white">Register</button>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="pt-12">
+        <div className="px-8 md:px-0 container mx-auto">
+          <h1 id="webinar-title" className="text-blue-600 text-3xl font-bold text-center">Webinar Conference</h1>
+          <section className="pt-10 ">
+            <h2 id="webinar-about" className="text-blue-600 text-2xl font-semibold text-center">About This Webinar</h2>
+            <p className="pt-6 text-slate-900 font-semibold text-xl text-center">Elit irure ea sunt sit nostrud id sunt et veniam voluptate. Sint sint est labore ad. Elit et proident velit excepteur fugiat consequat et elit. Labore quis magna ut eiusmod exercitation dolor incididunt ex adipisicing nostrud sit incididunt. Adipisicing incididunt pariatur nisi in nulla Lorem ad excepteur exercitation sunt commodo anim in mollit.</p>
+            <p className="pt-6 text-center font-bold">Thu, Oct 23, 2023<br></br>6:00 PM Singapore (GMT +7.00) </p  >
+          </section>       
+        </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section className="py-10 mt-12 bg-gray-100">
+        <div className="px-8 md:px-0 container mx-auto">
+          <h2 id="webinar-agenda" className="text-blue-600 text-2xl font-semibold text-center">Agenda</h2>
+          <ul className="list-disc px-2 pt-3 font-semibold text-xl">
+              <li>House Keeping</li>
+              <li>Course overview & platform walkthrough</li>
+              <li>Supports & Exam information</li>
+          </ul>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section className="py-10 mt-12 bg-gray-100">
+        <div className="px-8 md:px-0 container mx-auto">
+          <h2 id="webinar-agenda" className="text-blue-600 text-2xl font-semibold text-center">Presenter</h2>
+          <ul className="pt-3 text-center">
+            <li className="font-bold text-xl"><span className="text-blue-600">ANZ</span> Migrate</li  >
+            <li className="font-bold text-xl text-gray-600">MOOVAZ</li>
+          </ul>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+      <section className="py-10 mt-12 bg-gray-100 ">
+        <div className="px-8 md:px-0 container mx-auto">
+          <h2 id="webinar-agenda" className="text-blue-600 text-2xl font-semibold text-center">Register</h2>
+          <form action="" method="post" className="px-2 flex flex-col">
+            <div id="email-form" className="flex flex-col pb-4">
+              <label htmlFor="email" className="text-lg text-blue-600 font-semibold pb-1">Email*</label>
+              <input type="email" id="email" name="email" className="py-2" required/>
+            </div>
+            <div id="fname-form" className="flex flex-col pb-4">
+              <label htmlFor="fname" className="text-lg text-blue-600 font-semibold pb-1">First Name*</label>
+              <input type="text" id="fname" name="fname" className="py-2" required/>
+            </div>
+            <div id="lname-form" className="flex flex-col pb-4">
+              <label htmlFor="lname" className="text-lg text-blue-600 font-semibold pb-1">Last Name*</label>
+              <input type="text" id="lname" name="lname" className="py-2" required/>
+            </div>
+            <div id="country-form" className="flex flex-col pb-6">
+              <label htmlFor="country" className="text-lg text-blue-600 font-semibold pb-1">Country*</label>
+              <input type="text" id="country" name="country" className="py-2" required/>
+            </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <button className="bg-blue-600 rounded-md py-2 px-9 font-medium text-white">Register</button>
+          </form>
+        </div>
+        </section>
+    </div>
   )
 }
