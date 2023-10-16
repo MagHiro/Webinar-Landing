@@ -20,8 +20,8 @@ export default function Home() {
             <section className="mt-28 py-16 bg-gray-100 px-10">
               <h2 id="webinar-about" className="text-blue-600 text-2xl font-bold text-left">About This Webinar</h2>
               <p className="pt-6 text-gray-500 font-semibold text-xl text-left">Join us LIVE for the DMI Open day!</p>
-              <p className="pt-6 text-gray-500 font-semibold text-xl text-left">Talk to our team in real-time, and learn how Migrate has helped boost the careers of thousands of marketers around the world, with over 220,000 members around the world see why we're the global authority on migration.</p>
-              <p className="pt-6 text-gray-500 font-semibold text-xl text-left">In this webinar, ANZ Migrate & MOOVAZ will walk you through your Migration experience. You'll experience the course interface, sample modules, and all the key features that increase your overall opportunity, as well as all the supports provided to you during your assistant.</p>
+              <p className="pt-6 text-gray-500 font-semibold text-xl text-left">Talk to our team in real-time, and learn how Migrate has helped boost the careers of thousands of marketers around the world, with over 220,000 members around the world see why we&apos;re the global authority on migration.</p>
+              <p className="pt-6 text-gray-500 font-semibold text-xl text-left">In this webinar, ANZ Migrate & MOOVAZ will walk you through your Migration experience. You&apos;ll experience the course interface, sample modules, and all the key features that increase your overall opportunity, as well as all the supports provided to you during your assistant.</p>
               
               <h2 id="webinar-agenda" className="pt-16 text-blue-600 text-2xl font-semibold text-left">Agenda</h2>
               <ul className="pt-3 font-semibold text-xl text-gray-500 list-disc list-inside">
